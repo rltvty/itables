@@ -208,5 +208,4 @@ def show(df=None, **kwargs):
 
 def html(df=None, **kwargs):
     """Return html for a dataframe"""
-    html = _datatables_repr_(df, **kwargs)
-    return HTML(html)
+    return HTML(_datatables_repr_(df, **kwargs))
