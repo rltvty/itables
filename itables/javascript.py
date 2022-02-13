@@ -206,6 +206,7 @@ def show(df=None, **kwargs):
     html = _datatables_repr_(df, **kwargs)
     display(HTML(html))
 
-def html(df=None, **kwargs):
+def no_show(df=None, **kwargs):
     """Return html for a dataframe"""
-    return HTML(_datatables_repr_(df, **kwargs))
+    html = _datatables_repr_(df, **kwargs)
+    return HTML(html)
